@@ -18,3 +18,7 @@
 # ignore the local bash scipts/settings file
 #
 .bash.d/local.bash
+
+# ignore vim's netrwhist
+#
+.netrwhist
