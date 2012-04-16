@@ -1,51 +1,68 @@
 [submodule "gitmodules/rainbowparenthesis"]
 	path = gitmodules/rainbowparenthesis
 	url = git://github.com/vim-scripts/Rainbow-Parenthesis.git
+	ignore = dirty
 [submodule "gitmodules/nerdtree"]
 	path = gitmodules/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+	ignore = dirty
 [submodule "gitmodules/nerdcommenter"]
 	path = gitmodules/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+	ignore = dirty
 [submodule "gitmodules/unimpaired"]
 	path = gitmodules/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+	ignore = dirty
 [submodule "gitmodules/pathogen"]
 	path = gitmodules/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+	ignore = dirty
 [submodule "gitmodules/gundo"]
 	path = gitmodules/gundo
 	url = git://github.com/sjl/gundo.vim.git
+	ignore = dirty
 [submodule "gitmodules/fugitive"]
 	path = gitmodules/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+	ignore = dirty
 [submodule "gitmodules/solarized"]
 	path = gitmodules/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+	ignore = dirty
 [submodule "gitmodules/snipmate"]
 	path = gitmodules/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+	ignore = dirty
 [submodule "gitmodules/supertab"]
 	path = gitmodules/supertab
 	url = git://github.com/ervandew/supertab.git
+	ignore = dirty
 [submodule "gitmodules/surround"]
 	path = gitmodules/surround
 	url = git://github.com/tpope/vim-surround.git
+	ignore = dirty
 [submodule "gitmodules/indent"]
 	path = gitmodules/indent
 	url = git://github.com/michaeljsmith/vim-indent-object.git
+	ignore = dirty
 [submodule "gitmodules/argtext"]
 	path = gitmodules/argtext
 	url = git://github.com/vim-scripts/argtextobj.vim.git
+	ignore = dirty
 [submodule "gitmodules/camelcasemotion"]
 	path = gitmodules/camelcasemotion
 	url = git://github.com/bkad/CamelCaseMotion.git
+	ignore = dirty
 [submodule "gitmodules/omnicppcomplete"]
 	path = gitmodules/omnicppcomplete
 	url = git://github.com/vim-scripts/OmniCppComplete.git
+	ignore = dirty
 [submodule "gitmodules/commandt"]
 	path = gitmodules/commandt
 	url = git://git.wincent.com/command-t.git
+	ignore = dirty
 [submodule "gitmodules/tabular"]
 	path = gitmodules/tabular
 	url = git://github.com/godlygeek/tabular.git
+	ignore = dirty
