@@ -493,7 +493,3 @@ endfunction
 "   [I / ]I -- list all lines found in current + included files that contain the word under the cursor
 "   [D / ]D -- list all #defines found in current + included files that contain the word under the cursor
 "
-"
-"
-
-
