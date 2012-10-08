@@ -210,6 +210,10 @@ set formatoptions+=rql
 "
 set nowrap
 
+" when wrapping, don't split words
+"
+set linebreak
+
 " highlight trailing whitespace
 "
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -297,11 +301,10 @@ let g:miniBufExplTabWrap = 1
 " SuperTab mappings and settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType         = 'context'
-let g:SuperTabContextDefaultCompletionType  = '<c-n>'
+let g:SuperTabContextDefaultCompletionType  = '<c-p>'
 let g:SuperTabMappingForward                = '<tab>'
 let g:SuperTabMappingBackward               = '<s-tab>'
 let g:SuperTabMappingTabLiteral             = '<c-tab>'
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive mappings and settings
@@ -353,6 +356,7 @@ nnoremap <silent> <Leader>e :NERDTreeToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SnipMate mappings and settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:snips_author = 'Brooks Prumo'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag List mappings and settings
