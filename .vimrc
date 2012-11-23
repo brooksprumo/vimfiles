@@ -454,6 +454,10 @@ nnoremap <Leader>v<Leader> :edit $MYVIMRC<CR>
 "autocmd BufWritePost .vimrc source $MYVIMRC
 
 
+" Use spacebar to toggle a fold
+"
+nnoremap <Space> za
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
