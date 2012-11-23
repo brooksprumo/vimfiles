@@ -66,3 +66,7 @@
 	path = gitmodules/tabular
 	url = git://github.com/godlygeek/tabular.git
 	ignore = dirty
+[submodule "gitmodules/next_last_text_objects"]
+	path = gitmodules/next_last_text_objects
+	url = git://gist.github.com/3762227.git
+	ignore = dirty
