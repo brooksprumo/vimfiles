@@ -454,6 +454,11 @@ nnoremap <Leader>v<Leader> :edit $MYVIMRC<CR>
 "
 nnoremap <Space> za
 
+
+" Sort #includes
+"
+nnoremap <Leader>si<Leader> :/#include/,/^\w*$/-1 sort i<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
