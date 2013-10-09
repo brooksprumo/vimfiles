@@ -391,9 +391,10 @@ nnoremap <silent> <leader>y :YRShow<CR>
 " See :help map-modes and :help key-mapping for more information
 
 
-" Don't require holding shift to enter command/ex mode from normal mode
+" Don't require holding shift to enter command/ex mode from normal/visual mode
 "
 nnoremap ; :
+vnoremap ; :
 
 " Jump to last opened buffer
 " (can also use ctrl+6 or ctrl+^)
@@ -422,11 +423,6 @@ inoremap <F9> <ESC>:set list!<CR>i
 " Insert the data and time
 "
 inoremap <Leader>d<Leader> <C-R>=strftime("%c")<CR>
-
-" Perforce mappings
-" - edit/checkout a file
-"
-nnoremap <silent> <Leader>pe :!start p4 edit %<CR>
 
 " Redo syntax highlighting
 "
