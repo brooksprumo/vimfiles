@@ -262,12 +262,6 @@ set noexpandtab
 "
 set nosmarttab
 
-" At work, I want spaces not tabs.  Since work is Windows, just check for that.
-"
-if s:os == 'windows'
-    set expandtab
-endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Perl
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
