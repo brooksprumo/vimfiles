@@ -18,3 +18,7 @@
 # ignore vim's netrwhist
 #
 .netrwhist
+
+# ignore the bundle directory
+#
+bundle/
