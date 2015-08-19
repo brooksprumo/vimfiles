@@ -1,13 +1,33 @@
-" ~/.vimrc
-
-" Pathogen needs to be done before most other things, so just make it the first!
-" (The toggle of on-then-off is there to fix an issue where vim will exit with a non-zero return value when filetype is off and you call filetype off agian.  To solve that scenario, just turn filetype on before.)
-"
-filetype on
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
+set nocompatible
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+" github plugins
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bling/vim-airline'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'ervandew/supertab'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'rust-lang/rust.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sjl/gundo.vim'
+Plugin 'taglist.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-unimpaired'
+
+" vimscript plugins
+Plugin 'YankRing.vim'
+Plugin 'a.vim'
+
+" other plugins
+Plugin 'git://git.wincent.com/command-t.git'
+call vundle#end()
 filetype plugin indent on
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
