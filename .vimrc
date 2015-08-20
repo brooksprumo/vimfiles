@@ -18,13 +18,11 @@ Plugin 'sjl/gundo.vim'
 Plugin 'taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'wincent/command-t'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
 Plugin 'a.vim'
-
-" other plugins
-Plugin 'git://git.wincent.com/command-t.git'
 call vundle#end()
 filetype plugin indent on
 
