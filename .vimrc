@@ -19,6 +19,7 @@ Plugin 'taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'wincent/command-t'
+Plugin 'Valloric/YouCompleteMe'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
