@@ -135,12 +135,6 @@ set guicursor=a:blinkon0
 
 " GUI vs Console
 "
-" Set the colorscheme
-" other ok ones are:
-" koehler
-" desert (for windows)
-" dante (for non-windows)
-"
 if has("gui_running")
 	set lines=50 columns=100
 	set antialias
@@ -310,10 +304,6 @@ autocmd User fugitive
 "
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-" Put git information in the statusline
-"
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gundo mappings and settings
@@ -324,11 +314,6 @@ nnoremap <silent> <Leader>u :GundoToggle<CR>
 " Nerd Tree mappings and settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <Leader>e :NERDTreeToggle<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" SnipMate mappings and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:snips_author = 'Brooks Prumo'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag List mappings and settings
