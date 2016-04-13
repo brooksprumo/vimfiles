@@ -8,7 +8,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'ervandew/supertab'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'rust-lang/rust.vim'
@@ -309,15 +308,6 @@ let g:miniBufExplTabWrap = 1
 "
 "let g:miniBufExplForceSyntaxEnable = 1
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" SuperTab mappings and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType         = 'context'
-let g:SuperTabContextDefaultCompletionType  = '<c-p>'
-let g:SuperTabMappingForward                = '<tab>'
-let g:SuperTabMappingBackward               = '<s-tab>'
-let g:SuperTabMappingTabLiteral             = '<c-tab>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive mappings and settings
