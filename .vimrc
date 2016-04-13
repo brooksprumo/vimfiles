@@ -8,7 +8,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
@@ -287,27 +286,6 @@ set nosmarttab
 "
 let perl_extended_vars = 1
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Rainbow parenthesis and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" MiniBufExplorer mappings and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use <Leader>mbt to toggle
-
-" With alternate explorers, this places buffers into a window that does not have a nonmodifiable buffer
-"
-let g:miniBufExplModSelTarget = 1
-
-" Don't split buffer names across multiple lines
-"
-let g:miniBufExplTabWrap = 1
-
-" Incase syntax highlighting disappears, turn this on (there is a bug in Vim 6)
-"
-"let g:miniBufExplForceSyntaxEnable = 1
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive mappings and settings
@@ -341,15 +319,6 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " Gundo mappings and settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <Leader>u :GundoToggle<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Command-T mappings and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use <Leader>t to toggle
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Nerd Commenter mappings and settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Nerd Tree mappings and settings
