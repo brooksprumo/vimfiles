@@ -6,7 +6,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " github plugins
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
 Plugin 'rust-lang/rust.vim'
@@ -139,7 +140,7 @@ if has("gui_running")
 	set lines=50 columns=100
 	set antialias
 else
-    set t_Co=16
+	set t_Co=16
 endif
 colorscheme solarized
 
@@ -326,6 +327,11 @@ inoremap <silent> <F8> <ESC>:TlistToggle<CR>i
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap Y :<C-U>YRYankCount 'y$'<CR>
 nnoremap <silent> <leader>y :YRShow<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Airline mappings and settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
