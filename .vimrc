@@ -20,6 +20,7 @@ Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'wincent/command-t'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'cespare/vim-toml'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
