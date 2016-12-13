@@ -424,6 +424,13 @@ nnoremap <Space> za
 "
 nnoremap <Leader>si<Leader> :/#include/,/^\w*$/-1 sort i<CR>
 
+" bindings for movement between splits
+"
+nnoremap <silent> <C-h> :wincmd h<CR>
+nnoremap <silent> <C-j> :wincmd j<CR>
+nnoremap <silent> <C-k> :wincmd k<CR>
+nnoremap <silent> <C-l> :wincmd l<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
