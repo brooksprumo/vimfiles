@@ -430,6 +430,10 @@ nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
+nnoremap <silent> <C-H> :wincmd H<CR>
+nnoremap <silent> <C-J> :wincmd J<CR>
+nnoremap <silent> <C-K> :wincmd K<CR>
+nnoremap <silent> <C-L> :wincmd L<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
