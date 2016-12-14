@@ -426,14 +426,14 @@ nnoremap <Leader>si<Leader> :/#include/,/^\w*$/-1 sort i<CR>
 
 " bindings for movement between splits
 "
-nnoremap <silent> <C-h> :wincmd h<CR>
-nnoremap <silent> <C-j> :wincmd j<CR>
-nnoremap <silent> <C-k> :wincmd k<CR>
-nnoremap <silent> <C-l> :wincmd l<CR>
-nnoremap <silent> <C-H> :wincmd H<CR>
-nnoremap <silent> <C-J> :wincmd J<CR>
-nnoremap <silent> <C-K> :wincmd K<CR>
-nnoremap <silent> <C-L> :wincmd L<CR>
+nnoremap <silent> <c-h> :wincmd h<CR>
+nnoremap <silent> <c-j> :wincmd j<CR>
+nnoremap <silent> <c-k> :wincmd k<CR>
+nnoremap <silent> <c-l> :wincmd l<CR>
+nnoremap <silent> <C-S-H> :wincmd H<CR>
+nnoremap <silent> <C-S-J> :wincmd J<CR>
+nnoremap <silent> <C-S-K> :wincmd K<CR>
+nnoremap <silent> <C-S-L> :wincmd L<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
