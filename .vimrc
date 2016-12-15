@@ -122,8 +122,8 @@ set guicursor=a:blinkon0
 
 " set colorscheme
 "
-set background=dark
 colorscheme solarized
+set background=dark
 highlight SpecialKey guibg=#002b36
 
 " Set the gui font
