@@ -6,8 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " github plugins
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'cespare/vim-toml'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
 Plugin 'rust-lang/rust.vim'
@@ -18,9 +17,11 @@ Plugin 'taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'wincent/command-t'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'cespare/vim-toml'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'wincent/command-t'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
@@ -189,6 +190,9 @@ set formatoptions+=rql
 set nowrap
 set linebreak
 
+" set <leader> *before* any mappings
+"
+let mapleader = "\<Space>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive mappings and settings
@@ -223,7 +227,10 @@ nnoremap <silent> <leader>u :GundoToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Nerd Tree mappings and settings
 "
-nnoremap <silent> <leader>e :NERDTreeToggle<CR>
+nnoremap <silent> <leader>nn :NERDTreeToggle<CR>
+nnoremap <silent> <leader>nf :NERDTreeFind<CR>
+nnoremap <silent> <leader>nc :NERDTreeCWD<CR>
+nnoremap <silent> <leader>nm :NERDTreeMirror<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -298,10 +305,6 @@ nnoremap <silent> <2-LeftMouse> "hyiw:let @/='<C-R>h'<CR>:set hlsearch<CR>
 "
 nnoremap <leader>v<leader> :edit $MYVIMRC<CR>
 
-" Use spacebar to toggle a fold
-"
-nnoremap <Space> za
-
 " Sort #includes
 "
 nnoremap <leader>si<leader> :/#include/,/^\w*$/-1 sort i<CR>
@@ -313,13 +316,13 @@ nnoremap <silent> <c-j> :wincmd j<CR>
 nnoremap <silent> <c-k> :wincmd k<CR>
 nnoremap <silent> <c-l> :wincmd l<CR>
 
-" unmap K
-"
-nnoremap K <nop>
-
 " make Y yank until the end of the line
 "
 nnoremap Y y$
+
+" Stuff to unmap
+"
+nnoremap K <nop>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
