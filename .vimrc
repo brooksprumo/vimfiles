@@ -195,6 +195,15 @@ set linebreak
 "
 let mapleader = "\<Space>"
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Alternate mappings and settings
+"
+noremap <leader>is <nop>
+noremap <leader>ih <nop>
+noremap <leader>ihn <nop>
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive mappings and settings
 "
