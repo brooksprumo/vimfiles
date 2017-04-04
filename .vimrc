@@ -244,6 +244,13 @@ nnoremap <silent> <leader>nm :NERDTreeMirror<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Nerd Commenter mappings and settings
+"
+let g:NERDSpaceDelims = 1
+let g:NERDTrimTrailingWhitespace = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tag List mappings and settings
 "
 nnoremap <silent> <F8>      :TlistToggle<CR>
