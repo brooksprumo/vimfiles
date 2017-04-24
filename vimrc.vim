@@ -26,7 +26,6 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
-Plugin 'a.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -194,14 +193,6 @@ set linebreak
 " set <leader> *before* any mappings
 "
 let mapleader = "\<Space>"
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Alternate mappings and settings
-"
-map <leader>is <nop>
-map <leader>ih <nop>
-map <leader>ihn <nop>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
