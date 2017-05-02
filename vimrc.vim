@@ -66,8 +66,8 @@ set smartcase
 
 " show (and set) invisible characters
 "
-set listchars=tab:→\ ,trail:•,extends:❯,precedes:❮
-set showbreak=↪
+set listchars=tab:⋮⋅,trail:•,extends:❯,precedes:❮
+set showbreak=↪︎
 set list
 
 " actual state of keyboard input
