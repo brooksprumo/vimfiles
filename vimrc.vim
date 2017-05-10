@@ -5,6 +5,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " github plugins
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'cespare/vim-toml'
 Plugin 'easymotion/vim-easymotion'
@@ -17,12 +19,11 @@ Plugin 'taglist.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'wincent/command-t'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " vimscript plugins
 Plugin 'YankRing.vim'
