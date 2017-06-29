@@ -4,7 +4,6 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-" github plugins
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
@@ -19,14 +18,13 @@ Plugin 'taglist.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'wincent/command-t'
 
-" vimscript plugins
-Plugin 'YankRing.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -250,10 +248,15 @@ inoremap <silent> <F8> <ESC>:TlistToggle<CR>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Yank Ring mappings and settings
+" Projectionist mappings and settings
 "
-nnoremap <silent> <leader>y :YRShow<CR>
-
+let g:projectionist_heuristics =
+	\ {
+	\   '*.c|*.cc|*.cpp': { 'alternate': '{}.h' },
+	\   '*.h':            { 'alternate': '{}.c' },
+	\   '*.hh':           { 'alternate': '{}.cc' },
+	\   '*.hpp':          { 'alternate': '{}.cpp' },
+	\ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline mappings and settings
