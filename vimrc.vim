@@ -4,15 +4,15 @@ set runtimepath+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'cespare/vim-toml'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'godlygeek/tabular'
+Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Shougo/denite.nvim'
 Plugin 'sjl/gundo.vim'
 Plugin 'taglist.vim'
 Plugin 'tpope/vim-dispatch'
@@ -21,9 +21,11 @@ Plugin 'tpope/vim-git'
 Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'wincent/command-t'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 filetype plugin indent on
