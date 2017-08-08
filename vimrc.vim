@@ -191,6 +191,10 @@ set formatoptions+=rql
 set nowrap
 set linebreak
 
+" Do not resize windows after splitting/closing a window
+"
+set noequalalways
+
 " set <leader> *before* any mappings
 "
 let mapleader = "\<Space>"
