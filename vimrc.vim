@@ -269,6 +269,17 @@ let g:projectionist_heuristics =
 "
 let g:airline#extensions#tabline#enabled = 1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" YouCompleteMe mappings and settings
+"
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_global_ycm_extra_conf = '~/git/vimfiles/ycm_extra_conf.py'
+let g:ycm_key_detailed_diagnostics = '<leader>yd'
+nnoremap <silent> <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <silent> <leader>yt :YcmCompleter GetType<CR>
+nnoremap <silent> <leader>yo :YcmCompleter GetDoc<CR>
+nnoremap <silent> <leader>yf :YcmCompleter FixIt<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key Mappings
