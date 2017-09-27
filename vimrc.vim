@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'cespare/vim-toml'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'embear/vim-localvimrc'
 Plugin 'godlygeek/tabular'
 Plugin 'maxbrunsfeld/vim-yankstack'
 Plugin 'rust-lang/rust.vim'
@@ -68,9 +69,10 @@ set smartcase
 
 " show (and set) invisible characters
 "
-set listchars=tab:⋮⋅,trail:•,extends:❯,precedes:❮
-set showbreak=↪︎
+set listchars=tab:│⬞,trail:•,extends:❯,precedes:❮
+set showbreak=↪\ " comment to make the space character evident
 set list
+set breakindent
 
 " actual state of keyboard input
 "
@@ -281,6 +283,19 @@ nnoremap <silent> <leader>yt :YcmCompleter GetType<CR>
 nnoremap <silent> <leader>yo :YcmCompleter GetDoc<CR>
 nnoremap <silent> <leader>yf :YcmCompleter FixIt<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" yankstack mappings and settings
+"
+let g:yankstack_map_keys = 0
+nnoremap <silent> <leader>p <Plug>yankstack_substitute_older_paste
+nnoremap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
+call yankstack#setup()
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" localvimrc mappings and settings
+"
+let g:localvimrc_persistent = 2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key Mappings
