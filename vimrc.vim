@@ -214,6 +214,7 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gp :Gpush<CR>
 
 " Map .. to go up a level when inspecting the git repository
 "
