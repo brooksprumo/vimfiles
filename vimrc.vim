@@ -258,17 +258,6 @@ inoremap <silent> <F8> <ESC>:TlistToggle<CR>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Projectionist mappings and settings
-"
-let g:projectionist_heuristics =
-	\ {
-	\   '*.c|*.cc|*.cpp': { 'alternate': '{}.h' },
-	\   '*.h':            { 'alternate': '{}.c' },
-	\   '*.hh':           { 'alternate': '{}.cc' },
-	\   '*.hpp':          { 'alternate': '{}.cpp' },
-	\ }
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline mappings and settings
 "
 let g:airline#extensions#tabline#enabled = 1
