@@ -286,8 +286,12 @@ nnoremap <silent> <leader>yf :YcmCompleter FixIt<CR>
 " yankstack mappings and settings
 "
 let g:yankstack_map_keys = 0
-nnoremap <silent> <leader>p <Plug>yankstack_substitute_older_paste
-nnoremap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
+nmap <silent> <leader>p <Plug>yankstack_substitute_older_paste
+xmap <silent> <leader>p <Plug>yankstack_substitute_older_paste
+imap <silent> <leader>p <Plug>yankstack_substitute_older_paste
+nmap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
+xmap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
+imap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
 call yankstack#setup()
 
 
@@ -361,8 +365,9 @@ nnoremap <silent> <c-k> :wincmd k<CR>
 nnoremap <silent> <c-l> :wincmd l<CR>
 
 " make Y yank until the end of the line
+" (this mapping must be *after* call yankstack#setup(), and needs recursion so don't use 'no')
 "
-nnoremap Y y$
+nmap Y y$
 
 " Stuff to unmap
 "
