@@ -258,6 +258,15 @@ inoremap <silent> <F8> <ESC>:TlistToggle<CR>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Projectionist mappings and settings
+"
+nnoremap <silent> <leader>aa :A<CR>
+nnoremap <silent> <leader>as :AS<CR>
+nnoremap <silent> <leader>av :AV<CR>
+nnoremap <silent> <leader>at :AT<CR>
+nnoremap <silent> <leader>ad :AD<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline mappings and settings
 "
 let g:airline#extensions#tabline#enabled = 1
