@@ -287,11 +287,7 @@ nnoremap <silent> <leader>yf :YcmCompleter FixIt<CR>
 "
 let g:yankstack_map_keys = 0
 nmap <silent> <leader>p <Plug>yankstack_substitute_older_paste
-xmap <silent> <leader>p <Plug>yankstack_substitute_older_paste
-imap <silent> <leader>p <Plug>yankstack_substitute_older_paste
 nmap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
-xmap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
-imap <silent> <leader>P <Plug>yankstack_substitute_newer_paste
 call yankstack#setup()
 
 
