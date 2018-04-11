@@ -10,6 +10,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'embear/vim-localvimrc'
 Plugin 'godlygeek/tabular'
 Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'natebosch/vim-lsc'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -34,32 +35,13 @@ filetype plugin indent on
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Identify the system
-"
-if has('win32') || has('win64')
-	let s:os = 'windows'
-elseif has('mac') || has('macunix')
-	let s:os = 'mac'
-elseif has ('unix') || has('win32unix')
-	let s:os = 'unix'
-endif
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 "
 
-" get out of vi-compatible mode
-"
-set nocompatible
 
 " none of these should be word dividers, so make them not be
 "
 set iskeyword+=_,$,@,%,#
-
-" set the title
-"
-set title
 
 " ignore case sensitivity on search patterns
 " ignore case sensitivity on search UNLESS using capital letters
@@ -74,13 +56,9 @@ set showbreak=↪\ " comment to make the space character evident
 set list
 set breakindent
 
-" actual state of keyboard input
-"
-set showcmd
-
 " syntax highlighting on
 "
-syntax on
+syntax enable
 
 " allow hidden buffers
 "
@@ -113,10 +91,6 @@ set lazyredraw
 set noerrorbells
 set novisualbell
 
-" set the tag file location
-"
-set tags+=tags;./tags;../tags;../../tags
-
 " set window splitting on the right
 "
 set splitright
@@ -130,16 +104,6 @@ set guicursor=a:blinkon0
 colorscheme solarized
 set background=dark
 highlight SpecialKey guibg=#002b36
-
-" Set the gui font
-"
-if s:os == 'windows'
-	set guifont=Consolas:h10
-elseif s:os == 'mac'
-	set guifont=Menlo:h11
-elseif s:os == 'unix'
-	set guifont=Monospace\ 9
-endif
 
 if has("multi_byte")
 	set encoding=utf-8
@@ -232,6 +196,34 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 " Gundo mappings and settings
 "
 nnoremap <silent> <leader>u :GundoToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LSC mappings and settings
+"
+let g:lsc_auto_map = v:true
+let g:lsc_server_commands = {
+	\ 'c': {
+	\    'command': 'cquery',
+	\    'message_hooks': {
+	\        'initialize': {
+	\            'initializationOptions': {'cacheDirectory': '/tmp/cquery'},
+	\            },
+	\        },
+	\    },
+	\ 'cpp': {
+	\    'command': 'cquery',
+	\    'message_hooks': {
+	\        'initialize': {
+	\            'initializationOptions': {'cacheDirectory': '/tmp/cquery'},
+	\            },
+	\        },
+	\    },
+	\ }
+
+" automatically close completion window after selection
+"
+autocmd CompleteDone * silent! pclose
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
