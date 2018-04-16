@@ -56,6 +56,10 @@ set showbreak=↪\ " comment to make the space character evident
 set list
 set breakindent
 
+" actual state of keyboard input
+"
+set showcmd
+
 " syntax highlighting on
 "
 syntax enable
